@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>2510 STORE | General UI</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 4 -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item"  onclick="myFunction(this)">
+          <a class="nav-link" data-widget="pushmenu" href="#">
+            <div>
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../../index3.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- SEARCH FORM -->
+      <form class="form-inline ml-3">
+        <div class="input-group input-group-sm">
+          <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-navbar" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Brad Diesel
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">Call me whenever you can...</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    John Pierce
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">I got your message bro</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Nora Silvester
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">The subject goes here</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 friend requests
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
+            <i class="fas fa-th-large"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index3.html" class="brand-link">
+        <img src="../../dist/img/AdminLTELogo.png" alt="2510 STORE Logo" class="brand-image img-circle elevation-3"
+        style="opacity: .8">
+        <span class="brand-text font-weight-light">2510 STORE</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Alexander Pierce</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+            <li class="nav-item has-treeview menu-open">
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../../index3.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Tổng quan</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="../widgets.html" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Widgets
+                  <span class="right badge badge-danger">New</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-cube"></i>
+                <p>
+                  Hàng hoá
+                  <i class="fas fa-angle-left right"></i>
+                  <span class="badge badge-info right">6</span>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/layout/top-nav.html" class="nav-link">
+                    <i class="fa fa-th nav-icon"></i>
+                    <p>Danh mục</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../layout/boxed.html" class="nav-link">
+                    <i class="fa fa-tag nav-icon"></i>
+                    <p>Thiết lập giá</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../layout/fixed-sidebar.html" class="nav-link">
+                    <i class="fa fa-check nav-icon"></i>
+                    <p>Kiểm kho</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-exchange-alt"></i>
+                <p>
+                  Giao dịch
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../charts/chartjs.html" class="nav-link">
+                    <i class="fa fa-file nav-icon"></i>
+                    <p>Hoá đơn</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../charts/flot.html" class="nav-link">
+                    <i class="fa fa-reply-all nav-icon"></i>
+                    <p>Trả hàng</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../charts/inline.html" class="nav-link">
+                    <i class="far fa-share-square nav-icon"></i>
+                    <p>Nhập hàng</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../charts/inline.html" class="nav-link">
+                    <i class="fa fa-share-square nav-icon"></i>
+                    <p>Trả hàng nhập</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../charts/inline.html" class="nav-link">
+                    <i class="fa fa-recycle nav-icon"></i>
+                    <p>Xuất huỷ</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview menu-open">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-male"></i>
+                <p>
+                  Đối tác
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="customer.html" class="nav-link active">
+                    <i class="fa fa-user nav-icon"></i>
+                    <p>Khách hàng</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="supplier.html" class="nav-link">
+                    <i class="fa fa-undo nav-icon"></i>
+                    <p>Nhà cung cấp</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-dollar-sign"></i>
+                <p>
+                  Sổ quỹ
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-chart-bar"></i>
+                <p>
+                  Báo cáo
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../tables/simple.html" class="nav-link">
+                    <i class="fas fa-chart-pie nav-icon"></i>
+                    <p>Cuối ngày</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link">
+                    <i class="fa fa-clipboard nav-icon"></i>
+                    <p>Bán hàng</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/jsgrid.html" class="nav-link">
+                    <i class="fa fa-inbox nav-icon"></i>
+                    <p>Đặt hàng</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/jsgrid.html" class="nav-link">
+                    <i class="fa fa-cube nav-icon"></i>
+                    <p>Hàng hoá</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/jsgrid.html" class="nav-link">
+                    <i class="fa fa-user nav-icon"></i>
+                    <p>Khách hàng</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/jsgrid.html" class="nav-link">
+                    <i class="fa fa-undo nav-icon"></i>
+                    <p>Nhà cung cấp</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/jsgrid.html" class="nav-link">
+                    <i class="fa fa-male nav-icon"></i>
+                    <p>Nhân viên</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/jsgrid.html" class="nav-link">
+                    <i class="fab fa-slideshare nav-icon"></i>
+                    <p>Kênh bán hàng</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/jsgrid.html" class="nav-link">
+                    <i class="fas fa-chart-line nav-icon"></i>
+                    <p>Tài chính</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">EXAMPLES</li>
+            <li class="nav-item">
+              <a href="pages/calendar.html" class="nav-link">
+                <i class="nav-icon fas fa-calendar-alt"></i>
+                <p>
+                  Calendar
+                  <span class="badge badge-info right">2</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-envelope"></i>
+                <p>
+                  Mailbox
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/mailbox/mailbox.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Inbox</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/mailbox/compose.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Compose</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/mailbox/read-mail.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Read</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  Pages
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/examples/invoice.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Invoice</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/profile.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Profile</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/e_commerce.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>E-commerce</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/projects.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Projects</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/project_add.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Project Add</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/project_edit.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Project Edit</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/project_detail.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Project Detail</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/contacts.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Contacts</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-plus-square"></i>
+                <p>
+                  Extras
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/examples/login.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Login</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/register.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Register</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/lockscreen.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Lockscreen</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/legacy-user-menu.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Legacy User Menu</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/language-menu.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Language Menu</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/404.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Error 404</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/500.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Error 500</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/blank.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Blank Page</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="starter.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Starter Page</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">MISCELLANEOUS</li>
+            <li class="nav-item">
+              <a href="https://adminlte.io/docs/3.0" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>Documentation</p>
+              </a>
+            </li>
+            <li class="nav-header">LABELS</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-circle text-danger"></i>
+                <p class="text">Important</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-circle text-warning"></i>
+                <p>Warning</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-circle text-info"></i>
+                <p>Informational</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-12">
+              <h1 style="display: inline-block;">Khách Hàng</h1>
+              <ol class="breadcrumb float-xs-right float-sm-right">
+                <li class="breadcrumb-item"><a href="../../index3.html">Home</a></li>
+                <li class="breadcrumb-item active">Khách Hàng</li>
+              </ol>
+            </div>
+            <div class="col-sm-12">
+              <div class=" d-block float-right">
+                <nav class="navbar">
+                  <div>
+                    <ul class="nav">
+                      <li class="nav-item function" id="moreInf"><strong>More Infor <i class="fas fa-caret-down"></i></strong>
+                          <div class="action">
+                            <a href="#">Update</a><hr>
+                            <a href="#">Delete</a>
+                          </div>
+                      </li>
+                      <li class="nav-item function" data-toggle="modal" data-target="#add"><strong>Add</strong></li>
+                      <li class="nav-item function" data-toggle="modal" data-target="#update"><i class="fas fa-sign-in-alt"> Import</i></li>
+                      <li class="nav-item function" id="delete"><i class="fas fa-list"></i></li>
+                    </ul>
+                  </div>
+                  
+                </nav> 
+              </div>
+              <div class="modal fade " id="add">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content add">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Thêm khách hàng</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body row">
+                      <div class="col-sm-6 row">
+                        <strong class="col-sm-4 mt-1">Loại khách* :</strong>
+                        <input type="radio" name="loaikhach" style="margin-left: 10px; margin-top: 5px"> Cá nhân
+                        <input type="radio" name="loaikhach" style="margin-left: 10px; margin-top: 5px"> Công ty
+                        <strong class="col-sm-4 mt-1">Mã KH* :</strong>
+                        <input type="text" name="makhachhang" style="height: 25px; margin-top: 5px"><br>
+                        <strong class="col-sm-4 mt-1">Tên KH* :</strong>
+                        <input type="text" name="makhachhang" style="height: 25px; margin-top: 5px"><br>
+                        <strong class="col-sm-4 mt-1">Số ĐT* :</strong>
+                        <input type="text" name="makhachhang" style="height: 25px;  margin-top: 5px"><br>
+                        <strong class="col-sm-4 mt-1">Ngày sinh :</strong>
+                        <input type="text" name="makhachhang" style="height: 25px;  margin-top: 5px"><br>
+                        <strong class="col-sm-4 mt-1">Địa chỉ  :</strong>
+                        <input type="text" name="makhachhang" style="height: 25px;  margin-top: 5px"><br>
+                      </div>
+                      <div class="col-sm-6 row">
+                        <strong class="col-sm-4 mt-1">Chi nhánh: </strong>
+                        <input type="text" name="makhachhang" style="height: 25px; margin-top: 5px"><br>
+                        <strong class="col-sm-4 mt-1">Mã số thuế:</strong>
+                        <input type="text" name="makhachhang" style="height: 25px; margin-top: 5px"><br>
+                        <strong class="col-sm-4 mt-1">Giới tính* :</strong>
+                        <input type="radio" name="gioitinh" style="margin-left: 10px; margin-top: 5px"> Nam
+                        <input type="radio" name="gioitinh" style="margin-left: 10px; margin-top: 5px"> Nữ 
+                        <input type="radio" name="gioitinh" style="margin-left: 10px; margin-top: 5px"> Khác
+                        <strong class="col-sm-4 mt-1">Email :</strong>
+                        <input type="text" name="makhachhang" style="height: 25px;  margin-top: 5px"><br>
+                        <strong class="col-sm-4 mt-1">Facebook :</strong>
+                        <input type="text" name="makhachhang" style="height: 25px;  margin-top: 5px"><br>
+                        <strong class="col-sm-4 mt-1">Ghi chú :</strong>
+                        <input type="text" name="makhachhang" style="height: 25px;  margin-top: 5px"><br>
+                      </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="update">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Import</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <h5>
+                       <b>Nhập hàng hoá từ file dữ liệu</b>
+                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     </h5>
+                     <br>
+                     <span>
+                       Xử lý dữ liệu (Tải về File mẫu: 
+                       <a href="" title="download">Excel file</a>
+                       ):
+                     </span>
+
+                     <hr>
+
+                     <h6><b>Có cập nhật giá trị tồn kho không?</b></h6>
+
+                     <br>
+
+                     <p><input type="radio" name="tonkho">Không (chỉ cập nhật thông tin hàng hóa)</p>
+                     <p><input type="radio" name="tonkho">Có (cập nhật tất cả thông tin hàng hóa và tồn kho)</p>
+
+                     <hr>
+
+                     <h6><b>Xử lý trùng mã hàng, khác tên hàng hóa?</b></h6>
+
+                     <br>
+
+                     <p><input type="radio" name="baoloi">Báo lỗi và dừng import</p><p><input type="radio" name="baoloi">Thay thế tên hàng cũ bằng tên hàng mới</p>
+                     <div class="warning-content">
+                      <h5>
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Lưu ý
+                      </h5>
+                      <i>Hệ thống cho phép nhập tối đa 5.000 mặt hàng mỗi lần từ file .</i><br>
+
+                      <i>Mã hàng chứa kí tự đặc biệt (@, #, $, *, /, -, _,...) và chữ có dấu sẽ gây khó khăn khi In và sử dụng mã vạch.</i><br>
+                      <i>Với hình ảnh hàng hóa, hệ thống sẽ lưu trữ và hiển thị theo link hình ảnh được nhập trên file excel (không lưu trữ ảnh).</i>
+
+                    </div>   
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>   
+          </div>        
+        </div><!-- /.container-fluid -->
+        <div>
+          <div class="col-sm-3 bg-light d-inline-block">
+            <div class="menu-left">
+              <div class="card card-dark">
+                <div class="card-header">
+                  <h3 class="card-title">Kiểu hiển thị</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <label class="container">
+                    <input type="radio" checked="checked" name="kieuhienthi" >
+                    <span class="checkmark">Theo danh sách</span>
+                  </label>
+                  <label class="container">
+                    <input type="radio" name="kieuhienthi">
+                    <span class="checkmark">Theo bảng</span>
+                  </label>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <div class="card card-dark">
+                <div class="card-header">
+                  <h3 class="card-title">Mối quan tâm</h3>
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <label class="container">Bán hàng
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Thu chi
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Hàng hoá
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Tổng hợp
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <div class="card card-dark">
+                <div class="card-header">
+                  <h3 class="card-title">Thời gian</h3>
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <label class="container">
+                    <input type="date" name="date">
+                    <input type="radio" checked="checked" name="radio-date">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">
+                    <input type="date" name="date">
+                    <input type="radio" name="radio-date">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <div class="card card-dark">
+                <div class="card-header">
+                  <h3 class="card-title">Khách hàng</h3>
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <strong>Mã khách hàng :</strong>
+                  <input type="text" name="">
+                  <strong>Tên khách hàng :</strong>
+                  <input type="text" name="">
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <div class="card card-dark">
+                <div class="card-header">
+                  <h3 class="card-title">Phương thức thanh toán</h3>
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <input type="radio" name="thanhtoan">
+                  Visa
+                  <br>
+                  <input type="radio" name="thanhtoan">
+                  Tiền mặt <br>
+                  <input type="radio" name="thanhtoan">
+                  Thẻ ATM <br>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <div class="card card-dark">
+                <div class="card-header">
+                  <h3 class="card-title">Loại thu chi</h3>
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <input type="radio" name="loaithuchi">
+                  Thu <br>
+                  <input type="radio" name="loaithuchi">
+                  Chi <br>
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div>
+          </div>
+          <table class="col-sm-9 tableCustomer">
+            <tr>
+              <th class="customer"><input type="checkbox" id="checkAll" onclick="checkAllID()"></th>
+              <th class="customer">Mã Khách Hàng</th>
+              <th class="customer">Tên Khách Hàng</th>
+              <th class="customer">Số Điện Thoại</th>
+              <th class="customer">Nợ hiện tại</th>
+              <th class="customer">Tổng bán trừ trả hàng</th>
+            </tr>
+
+            <tr>
+              <td class="customer"></td>
+              <td class="customer"></td>
+              <td class="customer"></td>
+              <td class="customer"></td>
+              <td class="customer">0</td>
+              <td class="customer">9.999.999.999</td>
+            </tr>
+            <tr class="collapse row0">
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="customer"><input type="checkbox" class="checkThis" onclick="checkId()"></td>
+              <td class="customer" data-toggle="collapse" data-target=".row1">CC001</td>
+              <td class="customer" data-toggle="collapse" data-target=".row1">Trần Văn Trung</td>
+              <td class="customer" data-toggle="collapse" data-target=".row1">0356647463</td>
+              <td class="customer" data-toggle="collapse" data-target=".row1">0</td>
+              <td class="customer" data-toggle="collapse" data-target=".row1">168,178,000</td>
+            </tr>
+            <tr class="collapse row1" > 
+              <td colspan="7">
+                <nav>
+                  <div class="nav nav-tabs">
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-home1" role="tab">Thông tin</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile1" role="tab" >Lịch sử thanh toán</a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home1" role="tabpanel">
+                    <div class="info">
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                          <div class="form-group">
+                            <label>
+                              Mã hoá đơn :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Thời gian :
+                              <input type="date" name="" disabled="disabled">
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Khách hàng :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Bảng giá :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Mã đặt hàng :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                          <div class="form-group">
+                            <label>
+                              Mã hoá đơn :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Thời gian :
+                              <input type="date" name="" disabled="disabled">
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Khách hàng :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Bảng giá :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Mã đặt hàng :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                          <textarea maxlength="4000" placeholder="Ghi chú..."rows="10"></textarea>
+                        </div>
+                      </div>
+                      <div class="table"></div>
+                      <div class="price"></div>
+                      <div class="nut"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-profile1" role="tabpanel">
+                    oiauoeiu
+                  </div>
+                </div>
+              </td> 
+            </tr>
+            <tr>
+              <td class="customer"><input type="checkbox" class="checkThis" onclick="checkId()"></td>
+              <td class="customer" data-toggle="collapse" data-target=".row2">CC001</td>
+              <td class="customer" data-toggle="collapse" data-target=".row2">Trần Văn Trung</td>
+              <td class="customer" data-toggle="collapse" data-target=".row2">0356647463</td>
+              <td class="customer" data-toggle="collapse" data-target=".row2">0</td>
+              <td class="customer" data-toggle="collapse" data-target=".row2">168,178,000</td>
+            </tr>
+            <tr class="collapse row2" > 
+              <td colspan="7">
+                <nav>
+                  <div class="nav nav-tabs">
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-home2" role="tab">Thông tin</a>
+
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile2" role="tab" >Lịch sử thanh toán</a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home2" role="tabpanel">
+                    <div class="info">
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                          <div class="form-group">
+                            <label>
+                              Mã hoá đơn :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Thời gian :
+                              <input type="date" name="" disabled="disabled">
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Khách hàng :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Bảng giá :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Mã đặt hàng :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                          <div class="form-group">
+                            <label>
+                              Mã hoá đơn :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Thời gian :
+                              <input type="date" name="" disabled="disabled">
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Khách hàng :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Bảng giá :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Mã đặt hàng :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                          <textarea maxlength="4000" placeholder="Ghi chú..."rows="10"></textarea>
+                        </div>
+                      </div>
+                      <div class="table"></div>
+                      <div class="price"></div>
+                      <div class="nut"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-profile2" role="tabpanel">
+                  </div>
+                </div>
+              </td> 
+            </tr>
+            <tr>
+              <td class="customer"><input type="checkbox" class="checkThis" onclick="checkId()"></td>
+              <td class="customer" data-toggle="collapse" data-target=".row3">CC001</td>
+              <td class="customer" data-toggle="collapse" data-target=".row3">Trần Văn Trung</td>
+              <td class="customer" data-toggle="collapse" data-target=".row3">0356647463</td>
+              <td class="customer" data-toggle="collapse" data-target=".row3">0</td>
+              <td class="customer" data-toggle="collapse" data-target=".row3">168,178,000</td>
+            </tr>
+            <tr class="collapse row3" > 
+              <td colspan="7">
+                <nav>
+                  <div class="nav nav-tabs">
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-home3" role="tab">Thông tin</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile3" role="tab" >Lịch sử thanh toán</a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home3" role="tabpanel">
+                    <div class="info">
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                          <div class="form-group">
+                            <label>
+                              Mã hoá đơn :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Thời gian :
+                              <input type="date" name="" disabled="disabled">
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Khách hàng :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Bảng giá :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Mã đặt hàng :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                          <div class="form-group">
+                            <label>
+                              Mã hoá đơn :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Thời gian :
+                              <input type="date" name="" disabled="disabled">
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Khách hàng :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Bảng giá :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Mã đặt hàng :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                          <textarea maxlength="4000" placeholder="Ghi chú..."rows="10"></textarea>
+                        </div>
+                      </div>
+                      <div class="table"></div>
+                      <div class="price"></div>
+                      <div class="nut"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-profile3" role="tabpanel">
+                    oiasiu
+                  </div>
+                </div>
+              </td> 
+            </tr>
+            <tr>
+              <td class="customer"><input type="checkbox" class="checkThis" onclick="checkId()"></td>
+              <td class="customer" data-toggle="collapse" data-target=".row4">CC001</td>
+              <td class="customer" data-toggle="collapse" data-target=".row4">Trần Văn Trung</td>
+              <td class="customer" data-toggle="collapse" data-target=".row4">0356647463</td>
+              <td class="customer" data-toggle="collapse" data-target=".row4">0</td>
+              <td class="customer" data-toggle="collapse" data-target=".row4">168,178,000</td>
+            </tr>
+            <tr class="collapse row4" > 
+              <td colspan="7">
+                <nav>
+                  <div class="nav nav-tabs" >
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#nav-home4" role="tab">Thông tin</a>
+
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile4" role="tab" >Lịch sử thanh toán</a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home4" role="tabpanel">
+                    <div class="info">
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                          <div class="form-group">
+                            <label>
+                              Mã hoá đơn :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Thời gian :
+                              <input type="date" name="" disabled="disabled">
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Khách hàng :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Bảng giá :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Mã đặt hàng :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                          <div class="form-group">
+                            <label>
+                              Mã hoá đơn :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Thời gian :
+                              <input type="date" name="" disabled="disabled">
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Khách hàng :
+                              <strong>HD001</strong>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Bảng giá :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              Mã đặt hàng :
+                              <span>Bảng giá chung</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                          <textarea maxlength="4000" placeholder="Ghi chú..."rows="10"></textarea>
+                        </div>
+                      </div>
+                      <div class="table"></div>
+                      <div class="price"></div>
+                      <div class="nut"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-profile4" role="tabpanel">
+                    <a href="">đâsd</a>
+                    <ul><li>xxdasdasd</li></ul>
+                  </div>
+                </div>
+              </td> 
+            </tr>
+
+          </table>
+
+        </div>    
+      </section><!-- Main content -->
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <div class="float-right d-none d-sm-block">
+        <b>Version</b> 3.0.0-beta.2
+      </div>
+      <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">2510 STORE</a>.</strong> All rights
+      reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- FastClick -->
+  <script src="../../plugins/fastclick/fastclick.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
+  <script type="text/javascript">
+    function myFunction(x) {
+      x.classList.toggle("change"); 
+    }
+    function checkAllID() {
+      var checkAll = document.getElementById('checkAll');
+      var checkBox = document.getElementsByClassName("checkThis");
+      var text = document.getElementById("moreInf");
+      if(checkAll.checked==true){
+        text.style.display = "inline";
+        for (i = 0; i < checkBox.length; i++) {
+          checkBox[i].checked = true;
+        }
+      }else{
+        text.style.display = "none";
+        for (i = 0; i < checkBox.length; i++) {
+          checkBox[i].checked = false;
+        }
+      }
+    }
+    function checkId() {
+      var checkBox = document.getElementsByClassName('checkThis');
+      var text = document.getElementById("moreInf");
+      var count = checkBox.length;
+      var count2= checkBox.length;
+      for (i = 0; i < checkBox.length; i++) {
+        if (checkBox[i].checked == true){
+          text.style.display = "inline";
+          count2--;
+        }
+      }
+      if(count==count2){
+        text.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

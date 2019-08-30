@@ -1,0 +1,112 @@
+/*<Khách hàng CSS>*/
+
+.color-palette {
+	height: 35px;
+	line-height: 35px;
+	text-align: right;
+	padding-right: .75rem;
+}
+
+.color-palette.disabled {
+	text-align: center;
+	padding-right: 0;
+	display: block;
+}
+
+.color-palette-set {
+	margin-bottom: 15px;
+}
+
+.color-palette span {
+	display: none;
+	font-size: 12px;
+}
+
+.color-palette:hover span {
+	display: block;
+}
+
+.color-palette.disabled span {
+	display: block;
+	text-align: left;
+	padding-left: .75rem;
+}
+
+.color-palette-box h4 {
+	position: absolute;
+	left: 1.25rem;
+	margin-top: .75rem;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 12px;
+	display: block;
+	z-index: 7;
+}
+.function{
+	display: inline-block;
+	margin-right: 65px;
+	padding: 5px;
+	background-color:  #343a40;
+	border-style: none;
+	border-radius: 10px;
+	color: white;
+}
+#moreInf{
+	display: none;
+}
+.action{
+
+	position: absolute;
+	top: 85%;
+	right: 75%;
+	z-index: 10;
+	border-radius: 4px;
+	background-color: #343a40;
+	width: 100px;
+	display: none;
+	text-align: center;
+}
+.action a{
+	color: white;
+	padding: 0px;
+	margin: 0px;
+}
+#moreInf:hover .action{
+	display: block !important ;
+}
+input [type="radio"]{
+	margin-left: 10px;
+}
+#delete{
+	font-size: 17px;
+	background-color:  #343a40;
+	border-style: none;
+	border-radius: 10px;
+	margin-right: 0px;
+	width: 30px;
+}
+.breadcrumb-item{
+	margin-top: 5px;
+}
+.tableCustomer{
+
+	float: right;
+	border-collapse: collapse;
+}
+
+.customer{
+	text-align: center;
+}
+table tr:nth-child(4n-4){
+	background-color: #343a40;
+	color: white;
+}
+table tr, th, td{
+	border-collapse: collapse;
+	border: 1px solid;	
+}
+table tr th{
+	background-color: #343a40;
+	color: white;
+}
+
+	/*---- </Khách hàng CSS>*/
